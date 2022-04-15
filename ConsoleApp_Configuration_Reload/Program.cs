@@ -5,7 +5,7 @@ using Microsoft.Extensions.DependencyInjection;
 /*
 程式直接執行，一開始直接印出連線字串與ProjectId，在第二次執行DoSometing之前，
 將修改的json，直接覆蓋 ConsoleApp_Configuration_Reload\ConsoleApp_Configuration_Reload\bin\Debug\net6.0\appsettings.json
-再次印出的連線字串與ProjectId，只有連線字串使修改過的，ProjectId卻還是舊的...
+再次印出的連線字串與ProjectId，只有連線字串是修改過的，ProjectId卻還是修改前的...
 */
 
 var serviceProvider = new ServiceCollection()
